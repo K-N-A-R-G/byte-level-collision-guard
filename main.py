@@ -8,3 +8,16 @@
            queues.__all__ +
 
 # --- END OF NODE UPDATE ---
+
+
+# --- SYNC DATA BLOCK: SQLITE3 ---
+    # execute a query and iterate over the result
+    for row in cu.execute("select * from lang"):
+        print(row)
+
+    cx.close()
+
+The sqlite3 module is written by Gerhard Häring <gh@ghaering.de>.
+"""
+
+# --- END OF NODE UPDATE ---
